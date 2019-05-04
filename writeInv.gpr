@@ -69,14 +69,14 @@
                 <string>type:GO</string>
             </attr>
         </edge>
-        <edge from="n3" to="n2">
-            <attr name="label">
-                <string>del:current</string>
-            </attr>
-        </edge>
         <edge from="n3" to="n0">
             <attr name="label">
                 <string>executes</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n2">
+            <attr name="label">
+                <string>del:current</string>
             </attr>
         </edge>
         <edge from="n3" to="n6">
@@ -109,6 +109,16 @@
                 <string>type:write</string>
             </attr>
         </edge>
+        <edge from="n1" to="n10">
+            <attr name="label">
+                <string>arg</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n7">
+            <attr name="label">
+                <string>id</string>
+            </attr>
+        </edge>
         <edge from="n1" to="n8">
             <attr name="label">
                 <string>target</string>
@@ -122,16 +132,6 @@
         <edge from="n1" to="n2">
             <attr name="label">
                 <string>in</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n7">
-            <attr name="label">
-                <string>id</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n10">
-            <attr name="label">
-                <string>arg</string>
             </attr>
         </edge>
         <edge from="n8" to="n8">
@@ -169,17 +169,22 @@
                 <string>type:writeOP</string>
             </attr>
         </edge>
-        <edge from="n5" to="n0">
-            <attr name="label">
-                <string>inv</string>
-            </attr>
-        </edge>
         <edge from="n5" to="n10">
             <attr name="label">
                 <string>value</string>
             </attr>
             <attr name="layout">
-                <string>101 0 262 87 123 435 11</string>
+                <string>101 0 267 73 143 445 11</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n0">
+            <attr name="label">
+                <string>inv</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n8">
+            <attr name="label">
+                <string>target</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">
