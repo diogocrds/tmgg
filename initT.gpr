@@ -384,7 +384,7 @@
         </edge>
         <edge from="n19" to="n19">
             <attr name="label">
-                <string>type:var</string>
+                <string>type:Lvar</string>
             </attr>
         </edge>
         <edge from="n19" to="n18">

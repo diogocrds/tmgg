@@ -51,7 +51,7 @@
         </node>
         <node id="n8">
             <attr name="layout">
-                <string>461 106 19 18</string>
+                <string>457 106 26 18</string>
             </attr>
         </node>
         <node id="n11">
@@ -254,7 +254,7 @@
         </edge>
         <edge from="n8" to="n8">
             <attr name="label">
-                <string>type:var</string>
+                <string>type:Lvar</string>
             </attr>
         </edge>
         <edge from="n8" to="n10">
@@ -437,7 +437,7 @@
         </edge>
         <edge from="n22" to="n22">
             <attr name="label">
-                <string>type:var</string>
+                <string>type:Lvar</string>
             </attr>
         </edge>
         <edge from="n22" to="n23">
