@@ -6,87 +6,87 @@
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>331 454 17 18</string>
+                <string>62 231 17 18</string>
             </attr>
         </node>
         <node id="n8">
             <attr name="layout">
-                <string>353 333 19 18</string>
+                <string>101 181 19 18</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>359 228 20 18</string>
+                <string>220 131 20 18</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>244 530 17 18</string>
+                <string>12 291 17 18</string>
             </attr>
         </node>
         <node id="n7">
             <attr name="layout">
-                <string>431 457 17 18</string>
+                <string>152 231 17 18</string>
             </attr>
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>323 532 30 18</string>
+                <string>100 291 30 18</string>
             </attr>
         </node>
         <node id="n9">
             <attr name="layout">
-                <string>390 602 36 18</string>
+                <string>202 331 36 18</string>
             </attr>
         </node>
         <node id="n6">
             <attr name="layout">
-                <string>547 211 34 36</string>
+                <string>13 117 34 36</string>
             </attr>
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>436 225 49 18</string>
+                <string>101 131 49 18</string>
             </attr>
         </node>
         <node id="n5">
             <attr name="layout">
-                <string>551 306 17 18</string>
+                <string>12 211 17 18</string>
             </attr>
         </node>
         <node id="n10">
             <attr name="layout">
-                <string>270 599 36 18</string>
+                <string>42 331 36 18</string>
             </attr>
         </node>
         <node id="n11">
             <attr name="layout">
-                <string>272 223 19 18</string>
+                <string>291 116 19 18</string>
             </attr>
         </node>
         <node id="n12">
             <attr name="layout">
-                <string>263 303 36 18</string>
+                <string>282 231 36 18</string>
             </attr>
         </node>
         <node id="n13">
             <attr name="layout">
-                <string>397 282 17 18</string>
+                <string>182 71 17 18</string>
             </attr>
         </node>
         <node id="n14">
             <attr name="layout">
-                <string>192 151 17 18</string>
+                <string>302 51 17 18</string>
             </attr>
         </node>
         <node id="n15">
             <attr name="layout">
-                <string>182 241 17 18</string>
+                <string>252 61 17 18</string>
             </attr>
         </node>
         <node id="n16">
             <attr name="layout">
-                <string>475 76 19 18</string>
+                <string>12 8 107 54</string>
             </attr>
         </node>
         <node id="n17">
@@ -96,12 +96,12 @@
         </node>
         <node id="n18">
             <attr name="layout">
-                <string>367 167 36 18</string>
+                <string>202 21 36 18</string>
             </attr>
         </node>
         <node id="n19">
             <attr name="layout">
-                <string>492 296 36 18</string>
+                <string>207 211 36 18</string>
             </attr>
         </node>
         <node id="n20">
@@ -119,14 +119,17 @@
                 <string>type:GO</string>
             </attr>
         </edge>
-        <edge from="n8" to="n7">
-            <attr name="label">
-                <string>new:current</string>
-            </attr>
-        </edge>
         <edge from="n8" to="n2">
             <attr name="label">
                 <string>executes</string>
+            </attr>
+            <attr name="layout">
+                <string>788 -1 126 180 220 180 220 156 11</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n7">
+            <attr name="label">
+                <string>new:current</string>
             </attr>
         </edge>
         <edge from="n8" to="n0">
@@ -164,24 +167,24 @@
                 <string>type:retW</string>
             </attr>
         </edge>
-        <edge from="n4" to="n10">
-            <attr name="label">
-                <string>arg</string>
-            </attr>
-        </edge>
         <edge from="n4" to="n0">
             <attr name="label">
                 <string>in</string>
             </attr>
         </edge>
-        <edge from="n4" to="n7">
+        <edge from="n4" to="n10">
             <attr name="label">
-                <string>out</string>
+                <string>arg</string>
             </attr>
         </edge>
         <edge from="n4" to="n1">
             <attr name="label">
                 <string>id</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n7">
+            <attr name="label">
+                <string>out</string>
             </attr>
         </edge>
         <edge from="n4" to="n9">
@@ -204,11 +207,6 @@
                 <string>new:flag:free</string>
             </attr>
         </edge>
-        <edge from="n6" to="n3">
-            <attr name="label">
-                <string>op</string>
-            </attr>
-        </edge>
         <edge from="n6" to="n5">
             <attr name="label">
                 <string>id</string>
@@ -217,6 +215,11 @@
         <edge from="n6" to="n16">
             <attr name="label">
                 <string>has</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n3">
+            <attr name="label">
+                <string>op</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
@@ -229,11 +232,6 @@
                 <string>type:writeOP</string>
             </attr>
         </edge>
-        <edge from="n3" to="n13">
-            <attr name="label">
-                <string>value</string>
-            </attr>
-        </edge>
         <edge from="n3" to="n2">
             <attr name="label">
                 <string>inv</string>
@@ -242,6 +240,14 @@
         <edge from="n3" to="n19">
             <attr name="label">
                 <string>target</string>
+            </attr>
+            <attr name="layout">
+                <string>278 1 143 156 200 210 11</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n13">
+            <attr name="label">
+                <string>value</string>
             </attr>
         </edge>
         <edge from="n5" to="n5">
@@ -269,17 +275,17 @@
                 <string>name</string>
             </attr>
         </edge>
-        <edge from="n11" to="n15">
-            <attr name="label">
-                <string>by</string>
-            </attr>
-        </edge>
         <edge from="n11" to="n14">
             <attr name="label">
                 <string>value</string>
             </attr>
             <attr name="layout">
-                <string>527 -1 281 232 194 176 11</string>
+                <string>461 0 310 115 310 76 11</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n15">
+            <attr name="label">
+                <string>by</string>
             </attr>
         </edge>
         <edge from="n12" to="n12">
@@ -312,14 +318,14 @@
                 <string>type:Lvar</string>
             </attr>
         </edge>
-        <edge from="n16" to="n17">
-            <attr name="label">
-                <string>new:writeBool</string>
-            </attr>
-        </edge>
         <edge from="n16" to="n18">
             <attr name="label">
                 <string>name</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n17">
+            <attr name="label">
+                <string>new:writeBool</string>
             </attr>
         </edge>
         <edge from="n16" to="n13">
@@ -327,7 +333,7 @@
                 <string>new:writeVal</string>
             </attr>
             <attr name="layout">
-                <string>510 -2 482 97 447 302 11</string>
+                <string>486 -2 126 57 175 75 11</string>
             </attr>
         </edge>
         <edge from="n16" to="n20">
@@ -335,7 +341,7 @@
                 <string>del:writeBool</string>
             </attr>
             <attr name="layout">
-                <string>484 3 499 92 701 195 11</string>
+                <string>484 3 484 85 720 202 11</string>
             </attr>
         </edge>
         <edge from="n17" to="n17">
@@ -353,7 +359,7 @@
                 <string>=</string>
             </attr>
             <attr name="layout">
-                <string>135 2 403 186 492 294 11</string>
+                <string>135 2 227 45 260 160 234 207 11</string>
             </attr>
         </edge>
         <edge from="n19" to="n19">

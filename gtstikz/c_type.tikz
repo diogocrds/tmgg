@@ -1,0 +1,42 @@
+% To use this figure in your LaTeX document
+% import the package groove/resources/groove2tikz.sty
+%
+\begin{tikzpicture}[scale=\tikzscale,name prefix=type-]
+\node[type_node] (n0) at (2.455, -0.255) {\ml{\textbf{GO}\\current: \textbf{int}}};
+\node[type_node] (n1) at (0.505, -1.255) {\ml{\textbf{read}\\id: \textbf{int}\\in: \textbf{int}\\out: \textbf{int}\\target: \textbf{string}}};
+\node[type_node] (n6) at (1.505, -1.505) {\ml{\textbf{write}\\arg: \textbf{int}\\id: \textbf{int}\\in: \textbf{int}\\out: \textbf{int}\\target: \textbf{string}}};
+\node[type_node] (n3) at (0.405, -0.355) {\ml{\textbf{initH}\\out: \textbf{int}\\var: \textbf{string}}};
+\node[type_node] (n13) at (1.105, -0.255) {\ml{\textbf{endH}\\in: \textbf{int}}};
+\node[type_node] (n5) at (3.505, -1.055) {\ml{\textbf{TM}}};
+\node[type_node] (n10) at (2.505, -1.155) {\ml{\textbf{var}\\by: \textbf{int}\\name: \textbf{string}\\value: \textbf{int}}};
+\node[type_node] (n16) at (0.255, -4.855) {\ml{\textbf{P}}};
+\node[type_node] (n17) at (1.705, -4.755) {\ml{\textbf{T}\\committed: \textbf{bool}\\id: \textbf{int}\\status: \textbf{string}}};
+\node[type_node] (n20) at (1.505, -2.705) {\ml{\textbf{retW}\\arg: \textbf{string}\\id: \textbf{int}\\in: \textbf{int}\\out: \textbf{int}\\target: \textbf{string}}};
+\node[type_node] (n25) at (0.505, -2.405) {\ml{\textbf{retR}\\arg: \textbf{int}\\id: \textbf{int}\\in: \textbf{int}\\out: \textbf{int}\\target: \textbf{string}}};
+\node[type_node] (n28) at (1.605, -0.455) {\ml{\textbf{init}\\id: \textbf{int}\\in: \textbf{int}\\out: \textbf{int}}};
+\node[type_node] (n30) at (0.305, -3.455) {\ml{\textbf{tryC}\\id: \textbf{int}\\in: \textbf{int}\\out: \textbf{int}}};
+\node[type_node] (n32) at (1.555, -3.755) {\ml{\textbf{commit}\\id: \textbf{int}\\in: \textbf{int}\\out: \textbf{int}}};
+\node[type_node] (n35) at (0.905, -3.755) {\ml{\textbf{abort}\\id: \textbf{int}\\in: \textbf{int}\\out: \textbf{int}}};
+\node[type_node] (n36) at (3.705, -2.455) {\ml{\textbf{C}\\\textit{free}\\id: \textbf{int}}};
+\node[type_node] (n38) at (3.405, -0.255) {\ml{\textbf{readOP}\\target: \textbf{string}}};
+\node[type_node] (n40) at (2.505, -2.055) {\ml{\textbf{writeOP}\\target: \textbf{string}\\value: \textbf{int}}};
+\node[type_node] (n43) at (2.555, -3.405) {\ml{\textbf{Lvar}\\name: \textbf{string}\\readBool: \textbf{bool}\\readFrom: \textbf{int}\\readVal: \textbf{int}\\writeBool: \textbf{bool}\\writePrev: \textbf{int}\\writePrevV: \textbf{int}\\writeVal: \textbf{int}}};
+\node[type_node] (n49) at (3.255, -1.855) {\ml{\textbf{tryC}}};
+
+\path[basic_edge](n38.south -| 3.505, -1.055) -- node[lab] {\ml{inv}} (n5) ;
+\path[basic_edge](n17.east |- 3.240, -4.570) -- (3.240, -4.570) -- (n17.east |- 3.240, -4.570)
+node[lab] at (3.211, -4.657) {\ml{rf\\rt\\rw\\ww}};
+\path[basic_edge] (n5)  -- node[lab] {\ml{has}}(n10.east |- 3.505, -1.055);
+\path[basic_edge] (n0)  --  (n5) 
+node[lab] at (2.897, -0.572) {\ml{executes}};
+\path[basic_edge] (n36)  -- node[lab] {\ml{op}} (n40) ;
+\path[basic_edge] (n40)  -- node[lab] {\ml{inv}} (n5) ;
+\path[basic_edge] (n36)  -- node[lab] {\ml{has}} (n43) ;
+\path[basic_edge] (n36)  -- (n38.south -| 3.705, -2.455)
+node[lab] at (3.755, -1.635) {\ml{op}};
+\path[basic_edge] (n16)  -- node[lab] {\ml{has}}(n17.west |- 0.255, -4.855);
+\path[basic_edge] (n36)  --  (n49) 
+node[lab] at (8.620, -2.542) {\ml{op}};
+\path[basic_edge] (n49)  --  (n5) 
+node[lab] at (3.330, -1.570) {\ml{inv}};
+\end{tikzpicture}

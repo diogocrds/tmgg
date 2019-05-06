@@ -1,0 +1,54 @@
+% To use this figure in your LaTeX document
+% import the package groove/resources/groove2tikz.sty
+%
+\begin{tikzpicture}[scale=\tikzscale,name prefix=writeRet-]
+\node[data_node] (n0) at (0.705, -2.405) {\ml{\textbf{int}}};
+\node[basic_node] (n8) at (1.105, -1.905) {\ml{\textbf{GO}}};
+\node[basic_node] (n2) at (2.305, -1.405) {\ml{\textbf{TM}}};
+\node[data_node] (n1) at (0.205, -3.005) {\ml{\textbf{int}}};
+\node[data_node] (n7) at (1.605, -2.405) {\ml{\textbf{int}}};
+\node[eraser_node] (n4) at (1.155, -3.005) {\ml{{\color{eraser_c}\textbf{retW}}}};
+\node[data_node] (n9) at (2.205, -3.405) {\ml{\textbf{string}}};
+\node[basic_node] (n6) at (0.305, -1.355) {\ml{\textbf{C}\\{\color{creator_c}+ \textit{free}}}};
+\node[eraser_node] (n3) at (1.255, -1.405) {\ml{{\color{eraser_c}\textbf{writeOP}}}};
+\node[data_node] (n5) at (0.205, -2.205) {\ml{\textbf{int}}};
+\node[data_node] (n10) at (0.605, -3.405) {\ml{\textbf{string}}};
+\node[basic_node] (n11) at (3.005, -1.255) {\ml{\textbf{var}}};
+\node[data_node] (n12) at (3.005, -2.405) {\ml{\textbf{string}}};
+\node[data_node] (n13) at (1.905, -0.805) {\ml{\textbf{int}}};
+\node[data_node] (n14) at (3.105, -0.605) {\ml{\textbf{int}}};
+\node[data_node] (n15) at (2.605, -0.705) {\ml{\textbf{int}}};
+\node[basic_node] (n16) at (0.655, -0.355) {\ml{\textbf{Lvar}\\{\color{eraser_c}$-$ writeBool = false}\\{\color{creator_c}+ writeBool = true}}};
+\node[data_node] (n18) at (2.205, -0.305) {\ml{\textbf{string}}};
+\node[data_node] (n19) at (2.255, -2.205) {\ml{\textbf{string}}};
+
+\path[basic_edge] (n8)  -- (2.200, -1.800) --  (n2) 
+node[lab] at (2.190, -1.790) {\ml{executes}};
+\path[eraser_edge] (n4)  -- node[lab] {\ml{{\color{eraser_c}in}}} (n0) ;
+\path[basic_edge](n16.east |- 2.205, -0.305) -- node[lab] {\ml{name}} (n18) ;
+\path[eraser_edge] (n4)  -- node[lab] {\ml{{\color{eraser_c}arg}}} (n10) ;
+\path[basic_edge, no_arrow](n19.south -| 2.205, -3.405) -- node[lab] {\ml{=}} (n9) ;
+\path[basic_edge, no_arrow] (n18)  -- (2.600, -1.600) --  (n19) 
+node[lab] at (2.323, -0.684) {\ml{=}};
+\path[eraser_edge](n4.west |- 0.205, -3.005) -- node[lab] {\ml{{\color{eraser_c}id}}} (n1) ;
+\path[basic_edge](n11.south -| 3.005, -2.405) -- node[lab] {\ml{name}} (n12) ;
+\path[basic_edge](n6.south -| 0.205, -2.205) -- node[lab] {\ml{id}} (n5) ;
+\path[basic_edge, no_arrow](n5.south -| 0.205, -3.005) -- node[lab] {\ml{=}} (n1) ;
+\path[basic_edge, no_arrow] (n12)  -- node[lab] {\ml{=}} (n9) ;
+\path[eraser_edge] (n4)  -- node[lab] {\ml{{\color{eraser_c}out}}} (n7) ;
+\path[basic_edge] (n6)  -- node[lab] {\ml{has}}(n16.south -| 0.305, -1.355);
+\path[creator_edge] (n8)  -- node[lab] {\ml{{\color{creator_c}current}}} (n7) ;
+\path[creator_edge] (n16)  --  (n13) 
+node[lab] at (1.510, -0.640) {\ml{{\color{creator_c}writeVal}}};
+\path[eraser_edge](n3.east |- 2.305, -1.405) -- node[lab] {\ml{{\color{eraser_c}inv}}} (n2) ;
+\path[eraser_edge] (n4)  -- node[lab] {\ml{{\color{eraser_c}target}}} (n9) ;
+\path[eraser_edge](n6.east |- 1.255, -1.405) -- node[lab] {\ml{{\color{eraser_c}op}}} (n3) ;
+\path[basic_edge] (n2)  -- node[lab] {\ml{has}} (n11) ;
+\path[eraser_edge] (n3)  --  (n19) 
+node[lab] at (1.590, -1.720) {\ml{{\color{eraser_c}target}}};
+\path[eraser_edge] (n8)  -- node[lab] {\ml{{\color{eraser_c}current}}} (n0) ;
+\path[basic_edge] (n11)  --  (n14) 
+node[lab] at (3.100, -0.970) {\ml{value}};
+\path[basic_edge] (n11)  -- node[lab] {\ml{by}} (n15) ;
+\path[eraser_edge] (n3)  -- node[lab] {\ml{{\color{eraser_c}value}}} (n13) ;
+\end{tikzpicture}

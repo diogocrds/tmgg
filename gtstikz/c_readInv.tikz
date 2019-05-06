@@ -1,0 +1,28 @@
+% To use this figure in your LaTeX document
+% import the package groove/resources/groove2tikz.sty
+%
+\begin{tikzpicture}[scale=\tikzscale,name prefix=readInv-]
+\node[data_node] (n2) at (1.505, -1.405) {\ml{\textbf{int}}};
+\node[basic_node] (n3) at (1.905, -0.705) {\ml{\textbf{GO}}};
+\node[basic_node] (n0) at (2.505, -0.155) {\ml{\textbf{TM}}};
+\node[data_node] (n7) at (0.205, -2.105) {\ml{\textbf{int}}};
+\node[data_node] (n6) at (2.305, -1.405) {\ml{\textbf{int}}};
+\node[eraser_node] (n1) at (1.855, -2.105) {\ml{{\color{eraser_c}\textbf{read}}}};
+\node[data_node] (n8) at (0.855, -1.605) {\ml{\textbf{string}}};
+\node[basic_node] (n4) at (0.255, -0.255) {\ml{\textbf{C}\\{\color{eraser_c}$-$ \textit{free}}}};
+\node[creator_node] (n5) at (1.355, -0.205) {\ml{{\color{creator_c}\textbf{readOP}}}};
+\node[data_node] (n9) at (0.205, -1.005) {\ml{\textbf{int}}};
+
+\path[creator_edge] (n3)  -- node[lab] {\ml{{\color{creator_c}current}}} (n6) ;
+\path[basic_edge, no_arrow](n9.south -| 0.205, -2.105) -- node[lab] {\ml{=}} (n7) ;
+\path[eraser_edge] (n3)  -- node[lab] {\ml{{\color{eraser_c}current}}} (n2) ;
+\path[eraser_edge] (n1)  -- node[lab] {\ml{{\color{eraser_c}out}}} (n6) ;
+\path[creator_edge] (n5)  -- node[lab] {\ml{{\color{creator_c}target}}} (n8) ;
+\path[eraser_edge] (n1)  -- node[lab] {\ml{{\color{eraser_c}target}}} (n8) ;
+\path[eraser_edge](n1.west |- 0.205, -2.105) -- node[lab] {\ml{{\color{eraser_c}id}}} (n7) ;
+\path[creator_edge](n4.east |- 1.355, -0.205) -- node[lab] {\ml{{\color{creator_c}op}}} (n5) ;
+\path[eraser_edge] (n1)  -- node[lab] {\ml{{\color{eraser_c}in}}} (n2) ;
+\path[creator_edge](n5.east |- 2.505, -0.155) -- node[lab] {\ml{{\color{creator_c}inv}}} (n0) ;
+\path[basic_edge] (n3)  -- node[lab] {\ml{executes}} (n0) ;
+\path[basic_edge](n4.south -| 0.205, -1.005) -- node[lab] {\ml{id}} (n9) ;
+\end{tikzpicture}

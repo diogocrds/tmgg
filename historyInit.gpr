@@ -6,32 +6,32 @@
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>19 297 43 36</string>
+                <string>140 140 43 36</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>132 311 7 18</string>
+                <string>222 131 7 18</string>
             </attr>
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>178 132 65 36</string>
+                <string>156 86 19 18</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>321 61 8 18</string>
+                <string>241 6 8 18</string>
             </attr>
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>150 51 20 18</string>
+                <string>150 11 20 18</string>
             </attr>
         </node>
         <node id="n5">
             <attr name="layout">
-                <string>287 163 76 54</string>
+                <string>256 96 8 18</string>
             </attr>
         </node>
         <node id="n6">
@@ -46,17 +46,17 @@
         </node>
         <node id="n8">
             <attr name="layout">
-                <string>18 227 36 18</string>
+                <string>17 131 36 18</string>
             </attr>
         </node>
         <node id="n9">
             <attr name="layout">
-                <string>70 161 11 18</string>
+                <string>100 96 11 18</string>
             </attr>
         </node>
         <node id="n10">
             <attr name="layout">
-                <string>13 33 54 54</string>
+                <string>31 26 19 18</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -120,6 +120,9 @@
         <edge from="n2" to="n5">
             <attr name="label">
                 <string>has</string>
+            </attr>
+            <attr name="layout">
+                <string>422 1 260 28 260 73 11</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">

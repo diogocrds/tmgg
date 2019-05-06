@@ -1,0 +1,22 @@
+% To use this figure in your LaTeX document
+% import the package groove/resources/groove2tikz.sty
+%
+\begin{tikzpicture}[scale=\tikzscale,name prefix=historyInit-]
+\node[eraser_node] (n0) at (1.615, -1.585) {\ml{{\color{eraser_c}\textbf{initH}}\\{\color{eraser_c}out = 1}}};
+\node[creator_node] (n3) at (1.655, -0.955) {\ml{{\color{creator_c}\textbf{GO}}\\{\color{creator_c}current = 1}}};
+\node[creator_node] (n2) at (2.455, -0.155) {\ml{{\color{creator_c}\textbf{P}}}};
+\node[creator_node] (n4) at (1.605, -0.205) {\ml{{\color{creator_c}\textbf{TM}}}};
+\node[creator_node] (n5) at (2.605, -1.055) {\ml{{\color{creator_c}\textbf{T}}\\{\color{creator_c}id = 0}\\{\color{creator_c}status = "vis"}}};
+\node[data_node] (n8) at (0.355, -1.405) {\ml{\textbf{string}}};
+\node[nesting_node] (n9) at (1.055, -1.055) {\ml{$\forall$}};
+\node[creator_node] (n10) at (0.405, -0.355) {\ml{{\color{creator_c}\textbf{var}}\\{\color{creator_c}by = 0}\\{\color{creator_c}value = 0}}};
+
+\path[nesting_edge] (n10)  -- node[lab] {\ml{@}} (n9) ;
+\path[creator_edge] (n4)  -- node[lab] {\ml{{\color{creator_c}has}}}(n10.east |- 1.605, -0.205);
+\path[eraser_edge] (n0)  -- node[lab] {\ml{{\color{eraser_c}var}}} (n8) ;
+\path[creator_edge] (n2)  -- (n5.north -| 2.455, -0.155)
+node[lab] at (2.590, -0.470) {\ml{{\color{creator_c}has}}};
+\path[nesting_edge] (n8)  -- node[lab] {\ml{@}} (n9) ;
+\path[creator_edge](n10.south -| 0.355, -1.405) -- node[lab] {\ml{{\color{creator_c}name}}} (n8) ;
+\path[creator_edge](n3.north -| 1.605, -0.205) -- node[lab] {\ml{{\color{creator_c}executes}}} (n4) ;
+\end{tikzpicture}

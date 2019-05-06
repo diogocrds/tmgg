@@ -1,0 +1,105 @@
+% To use this figure in your LaTeX document
+% import the package groove/resources/groove2tikz.sty
+%
+\begin{tikzpicture}[scale=\tikzscale,name prefix=type-]
+\node[type_node] (n0) at (0.505, -2.205) {\ml{\textbf{GO}}};
+\node[type_node] (n1) at (1.755, -1.005) {\ml{\textbf{read}}};
+\node[data_node] (n4) at (2.005, -0.205) {\ml{\textbf{string}}};
+\node[type_node] (n6) at (2.255, -1.005) {\ml{\textbf{write}}};
+\node[type_node] (n3) at (0.255, -1.005) {\ml{\textbf{initH}}};
+\node[type_node] (n13) at (0.855, -1.005) {\ml{\textbf{endH}}};
+\node[type_node] (n5) at (0.505, -2.855) {\ml{\textbf{TM}}};
+\node[type_node] (n10) at (1.405, -2.855) {\ml{\textbf{var}}};
+\node[type_node] (n16) at (0.755, -4.655) {\ml{\textbf{P}}};
+\node[type_node] (n17) at (1.355, -5.055) {\ml{\textbf{T}}};
+\node[data_node] (n19) at (0.405, -5.505) {\ml{\textbf{string}}};
+\node[type_node] (n20) at (2.755, -1.005) {\ml{\textbf{retW}}};
+\node[type_node] (n28) at (1.305, -1.005) {\ml{\textbf{init}}};
+\node[type_node] (n30) at (3.455, -1.305) {\ml{\textbf{tryC}}};
+\node[type_node] (n32) at (3.055, -2.405) {\ml{\textbf{commit}}};
+\node[type_node] (n35) at (3.755, -1.605) {\ml{\textbf{abort}}};
+\node[type_node] (n36) at (0.405, -4.355) {\ml{\textbf{C}\\\textit{free}}};
+\node[data_node] (n37) at (0.405, -5.105) {\ml{\textbf{int}}};
+\node[type_node] (n38) at (0.355, -3.755) {\ml{\textbf{readOP}}};
+\node[data_node] (n39) at (2.305, -3.005) {\ml{\textbf{string}}};
+\node[type_node] (n40) at (1.055, -3.755) {\ml{\textbf{writeOP}}};
+\node[type_node] (n43) at (1.755, -4.455) {\ml{\textbf{Lvar}}};
+\node[data_node] (n45) at (3.055, -5.205) {\ml{\textbf{bool}}};
+\node[type_node] (n49) at (1.655, -3.855) {\ml{\textbf{tryC}}};
+\node[data_node] (n50) at (2.705, -3.305) {\ml{\textbf{int}}};
+\node[data_node] (n11) at (1.805, -2.205) {\ml{\textbf{int}}};
+\node[type_node] (n25) at (3.255, -1.005) {\ml{\textbf{retR}}};
+
+\path[basic_edge](n38.north -| 0.505, -2.855) --  (n5) 
+node[lab] at (0.480, -3.260) {\ml{inv}};
+\path[basic_edge] (n43)  --  (n45) 
+node[lab] at (2.460, -4.840) {\ml{readBool\\writeBool}};
+\path[basic_edge](n17.east |- 1.900, -5.100) -- (1.900, -5.100) -- (n17.east |- 1.900, -5.100)
+node[lab] at (1.900, -5.117) {\ml{rf\\rt\\rw\\ww}};
+\path[basic_edge](n5.east |- 1.405, -2.855) -- node[lab] {\ml{has}} (n10) ;
+\path[basic_edge](n0.south -| 0.505, -2.855) --  (n5) 
+node[lab] at (0.510, -2.380) {\ml{executes}};
+\path[basic_edge] (n1)  --  (n4) 
+node[lab] at (1.720, -0.710) {\ml{target}};
+\path[basic_edge] (n3)  --  (n4) 
+node[lab] at (0.590, -0.730) {\ml{var}};
+\path[basic_edge] (n36)  --  (n40) 
+node[lab] at (0.720, -4.050) {\ml{op}};
+\path[basic_edge] (n40)  --  (n5) 
+node[lab] at (0.720, -3.280) {\ml{inv}};
+\path[basic_edge] (n10)  -- node[lab] {\ml{name}} (n39) ;
+\path[basic_edge] (n6)  --  (n4) 
+node[lab] at (2.160, -0.720) {\ml{target}};
+\path[basic_edge] (n20)  --  (n4) 
+node[lab] at (2.550, -0.660) {\ml{arg\\target}};
+\path[basic_edge](n36.east |- 1.755, -4.455) --  (n43) 
+node[lab] at (1.050, -4.460) {\ml{has}};
+\path[basic_edge](n36.north -| 0.355, -3.755) --  (n38) 
+node[lab] at (0.340, -4.060) {\ml{op}};
+\path[basic_edge] (n40)  --  (n50) 
+node[lab] at (1.800, -3.540) {\ml{value}};
+\path[basic_edge] (n40)  --  (n39) 
+node[lab] at (1.820, -3.350) {\ml{target}};
+\path[basic_edge] (n43)  --  (n39) 
+node[lab] at (1.780, -4.110) {\ml{name}};
+\path[basic_edge] (n10)  -- node[lab] {\ml{by\\value}} (n11) ;
+\path[basic_edge] (n17)  -- node[lab] {\ml{status}} (n19) ;
+\path[basic_edge] (n38)  --  (n39) 
+node[lab] at (1.500, -3.140) {\ml{target}};
+\path[basic_edge] (n16)  -- node[lab] {\ml{has}} (n17) ;
+\path[basic_edge](n17.west |- 0.405, -5.105) --  (n37) 
+node[lab] at (0.930, -5.080) {\ml{id}};
+\path[basic_edge](n36.south -| 0.405, -5.105) --  (n37) 
+node[lab] at (0.370, -4.740) {\ml{id}};
+\path[basic_edge] (n36)  --  (n49) 
+node[lab] at (0.930, -4.160) {\ml{op}};
+\path[basic_edge] (n49)  --  (n5) 
+node[lab] at (1.040, -3.300) {\ml{inv}};
+\path[basic_edge](n43.east |- 3.100, -4.500) -- (3.100, -4.500) --  (n50) 
+node[lab] at (3.080, -4.060) {\ml{readFrom\\readVal\\writeVal}};
+\path[basic_edge] (n43)  --  (n50) 
+node[lab] at (2.430, -4.040) {\ml{writePrev\\writePrevV}};
+\path[basic_edge] (n30)  -- (3.010, -2.000) --  (n11) 
+node[lab] at (3.320, -1.720) {\ml{id\\in\\out}};
+\path[basic_edge] (n35)  -- (3.400, -2.100) --  (n11) 
+node[lab] at (3.640, -1.990) {\ml{id\\in\\out}};
+\path[basic_edge] (n20)  -- (2.400, -1.700) --  (n11) 
+node[lab] at (2.600, -1.430) {\ml{id\\in\\out}};
+\path[basic_edge](n1.south -| 1.800, -1.700) -- (1.800, -1.700) -- (n11.north -| 1.800, -1.700)
+node[lab] at (1.812, -1.371) {\ml{id\\in\\out}};
+\path[basic_edge] (n3)  -- (1.400, -2.100) --  (n11) 
+node[lab] at (0.559, -1.240) {\ml{out}};
+\path[basic_edge] (n32)  --  (n11) 
+node[lab] at (2.550, -2.450) {\ml{id\\in\\out}};
+\path[basic_edge] (n28)  -- (1.600, -1.800) --  (n11) 
+node[lab] at (1.478, -1.440) {\ml{id\\in\\out}};
+\path[basic_edge](n0.east |- 1.805, -2.205) -- node[lab] {\ml{current}} (n11) ;
+\path[basic_edge] (n13)  -- (1.500, -2.000) --  (n11) 
+node[lab] at (0.997, -1.218) {\ml{in}};
+\path[basic_edge] (n6)  --  (n11) 
+node[lab] at (2.330, -1.450) {\ml{arg\\id\\in\\out}};
+\path[basic_edge] (n25)  -- (2.700, -1.800) --  (n11) 
+node[lab] at (3.036, -1.487) {\ml{arg\\id\\in\\out}};
+\path[basic_edge] (n25)  --  (n4) 
+node[lab] at (3.100, -0.700) {\ml{target}};
+\end{tikzpicture}

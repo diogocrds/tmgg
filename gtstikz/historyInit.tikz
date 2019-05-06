@@ -1,0 +1,32 @@
+% To use this figure in your LaTeX document
+% import the package groove/resources/groove2tikz.sty
+%
+\begin{tikzpicture}[scale=\tikzscale,name prefix=historyInit-]
+\node[eraser_node] (n0) at (0.405, -3.155) {\ml{{\color{eraser_c}\textbf{initH}}}};
+\node[data_node] (n1) at (1.355, -3.205) {\ml{1}};
+\node[creator_node] (n3) at (2.105, -1.505) {\ml{{\color{creator_c}\textbf{GO}}}};
+\node[creator_node] (n2) at (3.255, -0.705) {\ml{{\color{creator_c}\textbf{P}}}};
+\node[creator_node] (n4) at (1.605, -0.605) {\ml{{\color{creator_c}\textbf{TM}}}};
+\node[creator_node] (n5) at (3.255, -1.905) {\ml{{\color{creator_c}\textbf{T}}}};
+\node[data_node] (n6) at (2.055, -2.705) {\ml{0}};
+\node[data_node] (n7) at (3.255, -2.805) {\ml{"vis"}};
+\node[data_node] (n8) at (0.360, -2.360) {\ml{\textbf{string}}};
+\node[nesting_node] (n9) at (0.755, -1.705) {\ml{$\forall$}};
+\node[creator_node] (n10) at (0.405, -0.605) {\ml{{\color{creator_c}\textbf{var}}}};
+
+\path[eraser_edge](n0.east |- 1.355, -3.205) -- node[lab] {\ml{{\color{eraser_c}out}}} (n1) ;
+\path[nesting_edge] (n10)  -- node[lab] {\ml{@}} (n9) ;
+\path[creator_edge](n4.west |- 0.405, -0.605) -- node[lab] {\ml{{\color{creator_c}has}}} (n10) ;
+\path[nesting_edge] (n6)  -- node[lab] {\ml{@}} (n9) ;
+\path[eraser_edge](n0.north -| 0.360, -2.360) -- node[lab] {\ml{{\color{eraser_c}var}}} (n8) ;
+\path[creator_edge](n5.south -| 3.255, -2.805) -- node[lab] {\ml{{\color{creator_c}status}}} (n7) ;
+\path[creator_edge](n2.south -| 3.255, -1.905) -- node[lab] {\ml{{\color{creator_c}has}}} (n5) ;
+\path[nesting_edge] (n8)  -- node[lab] {\ml{@}} (n9) ;
+\path[creator_edge] (n3)  --  (n1) 
+node[lab] at (1.928, -1.760) {\ml{{\color{creator_c}current}}};
+\path[creator_edge] (n5)  -- node[lab] {\ml{{\color{creator_c}id}}} (n6) ;
+\path[creator_edge] (n10)  --  (n6) 
+node[lab] at (1.080, -1.170) {\ml{{\color{creator_c}by}\\{\color{creator_c}value}}};
+\path[creator_edge](n10.south -| 0.360, -2.360) -- node[lab] {\ml{{\color{creator_c}name}}} (n8) ;
+\path[creator_edge] (n3)  -- node[lab] {\ml{{\color{creator_c}executes}}} (n4) ;
+\end{tikzpicture}

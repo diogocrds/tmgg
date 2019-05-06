@@ -1,0 +1,24 @@
+% To use this figure in your LaTeX document
+% import the package groove/resources/groove2tikz.sty
+%
+\begin{tikzpicture}[scale=\tikzscale,name prefix=historyEnd-]
+\node[eraser_node] (n0) at (0.455, -3.205) {\ml{{\color{eraser_c}\textbf{endH}}}};
+\node[data_node] (n1) at (1.405, -3.205) {\ml{\textbf{int}}};
+\node[eraser_node] (n3) at (2.105, -1.505) {\ml{{\color{eraser_c}\textbf{GO}}}};
+\node[eraser_node] (n2) at (3.255, -0.655) {\ml{{\color{eraser_c}\textbf{P}}}};
+\node[eraser_node] (n4) at (1.605, -0.605) {\ml{{\color{eraser_c}\textbf{TM}}}};
+\node[eraser_node] (n5) at (0.405, -0.605) {\ml{{\color{eraser_c}\textbf{var}}}};
+\node[nesting_node] (n6) at (0.755, -1.705) {\ml{$\forall$}};
+\node[eraser_node] (n7) at (1.255, -2.405) {\ml{{\color{eraser_c}\textbf{C}}}};
+\node[eraser_node] (n8) at (0.255, -2.355) {\ml{{\color{eraser_c}\textbf{Lvar}}}};
+
+\path[eraser_edge] (n3)  -- node[lab] {\ml{{\color{eraser_c}executes}}} (n4) ;
+\path[eraser_edge](n0.east |- 1.405, -3.205) -- node[lab] {\ml{{\color{eraser_c}in}}} (n1) ;
+\path[eraser_edge] (n3)  --  (n1) 
+node[lab] at (1.928, -1.908) {\ml{{\color{eraser_c}current}}};
+\path[nesting_edge] (n5)  -- node[lab] {\ml{@}} (n6) ;
+\path[eraser_edge](n4.west |- 0.405, -0.605) -- node[lab] {\ml{{\color{eraser_c}has}}} (n5) ;
+\path[nesting_edge] (n7)  -- node[lab] {\ml{@}} (n6) ;
+\path[eraser_edge](n7.west |- 0.255, -2.355) -- node[lab] {\ml{{\color{eraser_c}has}}} (n8) ;
+\path[nesting_edge] (n8)  -- node[lab] {\ml{@}} (n6) ;
+\end{tikzpicture}

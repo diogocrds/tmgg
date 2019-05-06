@@ -6,47 +6,47 @@
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>29 311 33 18</string>
+                <string>229 136 33 18</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>132 311 17 18</string>
+                <string>152 151 17 18</string>
             </attr>
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>201 141 19 18</string>
+                <string>151 81 19 18</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>321 56 8 18</string>
+                <string>241 6 8 18</string>
             </attr>
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>150 51 20 18</string>
+                <string>150 11 20 18</string>
             </attr>
         </node>
         <node id="n5">
             <attr name="layout">
-                <string>31 51 19 18</string>
+                <string>31 11 19 18</string>
             </attr>
         </node>
         <node id="n6">
             <attr name="layout">
-                <string>70 161 11 18</string>
+                <string>100 46 11 18</string>
             </attr>
         </node>
         <node id="n7">
             <attr name="layout">
-                <string>121 231 8 18</string>
+                <string>101 106 8 18</string>
             </attr>
         </node>
         <node id="n8">
             <attr name="layout">
-                <string>12 226 26 18</string>
+                <string>12 111 26 18</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -89,7 +89,7 @@
                 <string>current</string>
             </attr>
             <attr name="layout">
-                <string>180 1 204 166 146 306 11</string>
+                <string>307 1 160 106 160 145 11</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">

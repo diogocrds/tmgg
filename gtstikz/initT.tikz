@@ -1,0 +1,48 @@
+% To use this figure in your LaTeX document
+% import the package groove/resources/groove2tikz.sty
+%
+\begin{tikzpicture}[scale=\tikzscale,name prefix=initT-]
+\node[data_node] (n3) at (0.765, -1.520) {\ml{\textbf{int}}};
+\node[basic_node] (n2) at (1.405, -0.960) {\ml{\textbf{GO}}};
+\node[basic_node] (n1) at (1.755, -2.155) {\ml{\textbf{P}}};
+\node[basic_node] (n4) at (2.750, -0.920) {\ml{\textbf{TM}}};
+\node[eraser_node] (n0) at (1.265, -2.070) {\ml{{\color{eraser_c}\textbf{init}}}};
+\node[data_node] (n5) at (0.215, -2.070) {\ml{\textbf{int}}};
+\node[data_node] (n6) at (1.835, -1.580) {\ml{\textbf{int}}};
+\node[creator_node] (n7) at (0.510, -2.860) {\ml{{\color{creator_c}\textbf{T}}\\{\color{creator_c}status = "loc"}}};
+\node[basic_node] (n8) at (2.290, -2.830) {\ml{\textbf{T}\\status = "vis"}};
+\node[data_node] (n9) at (3.005, -2.305) {\ml{\textbf{int}}};
+\node[creator_node] (n12) at (0.285, -1.240) {\ml{{\color{creator_c}\textbf{C}}\\{\color{creator_c}\textit{free}}}};
+\node[nesting_node] (n16) at (2.255, -2.055) {\ml{$\forall$}};
+\node[product_node] (n13) at (2.855, -1.505) {\ml{$\pi1$ = 0\\gt = true}};
+\node[basic_node] (n15) at (2.755, -0.230) {\ml{\textbf{var}}};
+\node[data_node] (n17) at (1.890, -0.190) {\ml{\textbf{string}}};
+\node[nesting_node] (n18) at (1.845, -0.590) {\ml{$\forall$}};
+\node[creator_node] (n19) at (0.590, -0.350) {\ml{{\color{creator_c}\textbf{Lvar}}\\{\color{creator_c}readBool = false}\\{\color{creator_c}writeBool = false}}};
+
+\path[creator_edge](n8.west |- 0.510, -2.860) -- node[lab] {\ml{{\color{creator_c}rt}}} (n7) ;
+\path[eraser_edge](n0.west |- 0.215, -2.070) -- node[lab] {\ml{{\color{eraser_c}id}}} (n5) ;
+\path[nesting_edge] (n15)  -- node[lab] {\ml{@}} (n18) ;
+\path[eraser_edge] (n2)  -- node[lab] {\ml{{\color{eraser_c}current}}} (n3) ;
+\path[creator_edge](n19.east |- 1.890, -0.190) -- node[lab] {\ml{{\color{creator_c}name}}} (n17) ;
+\path[basic_edge] (n1)  -- node[lab] {\ml{has}} (n8) ;
+\path[nesting_edge](n17.south -| 1.845, -0.590) -- node[lab] {\ml{@}} (n18) ;
+\path[nesting_edge](n8.north -| 2.255, -2.055) -- node[lab] {\ml{@}} (n16) ;
+\path[basic_edge](n4.north -| 2.755, -0.230) -- node[lab] {\ml{has}} (n15) ;
+\path[basic_edge] (n8)  -- node[lab] {\ml{id}} (n9) ;
+\path[basic_edge] (n13)  -- node[lab] {\ml{$\pi0$}} (n9) ;
+\path[eraser_edge] (n0)  -- node[lab] {\ml{{\color{eraser_c}in}}} (n3) ;
+\path[basic_edge](n2.east |- 2.750, -0.920) -- node[lab] {\ml{executes}} (n4) ;
+\path[creator_edge](n7.north -| 0.215, -2.070) -- node[lab] {\ml{{\color{creator_c}id}}} (n5) ;
+\path[nesting_edge] (n13)  -- node[lab] {\ml{@}} (n16) ;
+\path[creator_edge](n12.south -| 0.215, -2.070) -- node[lab] {\ml{{\color{creator_c}id}}} (n5) ;
+\path[eraser_edge] (n0)  -- node[lab] {\ml{{\color{eraser_c}out}}} (n6) ;
+\path[nesting_edge](n19.east |- 1.845, -0.590) --  (n18) 
+node[lab] at (1.390, -0.580) {\ml{@}};
+\path[creator_edge] (n12)  -- (n19.south -| 0.285, -1.240)
+node[lab] at (0.320, -0.910) {\ml{{\color{creator_c}has}}};
+\path[creator_edge] (n2)  -- node[lab] {\ml{{\color{creator_c}current}}} (n6) ;
+\path[creator_edge] (n1)  -- node[lab] {\ml{{\color{creator_c}has}}} (n7) ;
+\path[nesting_edge] (n9)  -- node[lab] {\ml{@}} (n16) ;
+\path[basic_edge](n15.west |- 1.890, -0.190) -- node[lab] {\ml{name}} (n17) ;
+\end{tikzpicture}
