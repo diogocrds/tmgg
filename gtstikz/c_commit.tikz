@@ -2,70 +2,70 @@
 % import the package groove/resources/groove2tikz.sty
 %
 \begin{tikzpicture}[scale=\tikzscale,name prefix=commit-]
-\node[data_node] (n2) at (0.605, -2.205) {\ml{\textbf{int}}};
-\node[basic_node] (n3) at (0.805, -1.705) {\ml{\textbf{GO}}};
-\node[basic_node] (n0) at (1.805, -1.305) {\ml{\textbf{TM}}};
-\node[data_node] (n7) at (0.205, -2.605) {\ml{\textbf{int}}};
-\node[data_node] (n6) at (1.505, -2.105) {\ml{\textbf{int}}};
-\node[eraser_node] (n1) at (1.155, -2.655) {\ml{{\color{eraser_c}\textbf{commit}}}};
-\node[eraser_node] (n9) at (0.155, -1.205) {\ml{{\color{eraser_c}\textbf{C}}}};
-\node[eraser_node] (n5) at (0.955, -1.305) {\ml{{\color{eraser_c}\textbf{tryC}}}};
-\node[data_node] (n4) at (0.205, -2.105) {\ml{\textbf{int}}};
-\node[eraser_node] (n8) at (0.605, -0.255) {\ml{{\color{eraser_c}\textbf{Lvar}}\\{\color{eraser_c}writeBool = true}}};
-\node[basic_node] (n11) at (1.855, -3.355) {\ml{\textbf{P}}};
-\node[basic_node] (n14) at (3.005, -3.455) {\ml{\textbf{T}\\status = "vis"}};
-\node[data_node] (n16) at (1.305, -3.605) {\ml{\textbf{int}}};
-\node[data_node] (n10) at (2.305, -0.805) {\ml{\textbf{int}}};
-\node[basic_node] (n13) at (2.205, -2.155) {\ml{\textbf{T}\\status = "vis"}};
-\node[data_node] (n15) at (2.305, -1.405) {\ml{\textbf{int}}};
-\node[basic_node] (n18) at (3.155, -2.055) {\ml{\textbf{T}}};
-\node[nesting_node] (n20) at (3.455, -1.755) {\ml{$\forall$}};
-\node[data_node] (n21) at (3.105, -1.405) {\ml{\textbf{int}}};
-\node[nesting_node] (n19) at (2.355, -0.205) {\ml{$\forall^{>0}$}};
-\node[eraser_node] (n22) at (0.755, -0.705) {\ml{{\color{eraser_c}\textbf{Lvar}}}};
-\node[nesting_node] (n23) at (1.355, -0.905) {\ml{$\forall$}};
+\node[data_node] (n2) at (0.605, -2.200) {\ml{\textbf{int}}};
+\node[basic_node] (n3) at (0.805, -1.700) {\ml{\textbf{GO}}};
+\node[basic_node] (n0) at (1.800, -1.300) {\ml{\textbf{TM}}};
+\node[data_node] (n7) at (0.205, -2.600) {\ml{\textbf{int}}};
+\node[data_node] (n6) at (1.505, -2.100) {\ml{\textbf{int}}};
+\node[eraser_node] (n1) at (1.155, -2.650) {\ml{{\color{eraser_c}\textbf{commit}}}};
+\node[eraser_node] (n9) at (0.150, -1.200) {\ml{{\color{eraser_c}\textbf{C}}}};
+\node[eraser_node] (n5) at (0.955, -1.300) {\ml{{\color{eraser_c}\textbf{tryC}}}};
+\node[data_node] (n4) at (0.205, -2.100) {\ml{\textbf{int}}};
+\node[eraser_node] (n8) at (0.600, -0.250) {\ml{{\color{eraser_c}\textbf{Lvar}}\\{\color{eraser_c}writeBool = true}}};
+\node[basic_node] (n11) at (1.850, -3.350) {\ml{\textbf{P}}};
+\node[basic_node] (n14) at (3.000, -3.450) {\ml{\textbf{T}\\status = "vis"}};
+\node[data_node] (n16) at (1.305, -3.600) {\ml{\textbf{int}}};
+\node[data_node] (n10) at (2.305, -0.800) {\ml{\textbf{int}}};
+\node[basic_node] (n13) at (2.200, -2.150) {\ml{\textbf{T}\\status = "vis"}};
+\node[data_node] (n15) at (2.305, -1.400) {\ml{\textbf{int}}};
+\node[basic_node] (n18) at (3.150, -2.050) {\ml{\textbf{T}}};
+\node[nesting_node] (n20) at (3.455, -1.750) {\ml{$\forall$}};
+\node[data_node] (n21) at (3.105, -1.400) {\ml{\textbf{int}}};
+\node[nesting_node] (n19) at (2.355, -0.200) {\ml{$\forall^{>0}$}};
+\node[eraser_node] (n22) at (0.750, -0.700) {\ml{{\color{eraser_c}\textbf{Lvar}}}};
+\node[nesting_node] (n23) at (1.355, -0.900) {\ml{$\forall$}};
 
-\path[nesting_edge] (n22)  -- node[lab] {\ml{@}} (n23) ;
-\path[basic_edge](n14.west |- 1.305, -3.605) -- node[lab] {\ml{id}} (n16) ;
-\path[eraser_edge] (n1)  -- node[lab] {\ml{{\color{eraser_c}in}}} (n2) ;
-\path[eraser_edge](n5.east |- 1.805, -1.305) --  (n0) 
-node[lab] at (3.676, -2.354) {\ml{{\color{eraser_c}inv}}};
-\path[basic_edge](n13.north -| 2.305, -1.405) -- node[lab] {\ml{id}} (n15) ;
-\path[creator_edge] (n18)  -- (n14.north -| 3.155, -2.055)
-node[lab] at (3.056, -2.699) {\ml{{\color{creator_c}rw}}};
-\path[creator_edge] (n13)  --  (n14) 
-node[lab] at (2.374, -2.406) {\ml{{\color{creator_c}ww}}};
-\path[basic_edge](n13.east |- 3.155, -2.055) -- node[lab] {\ml{rf}} (n18) ;
-\path[basic_edge] (n11)  -- (n14.west |- 1.855, -3.355)
-node[lab] at (2.421, -3.516) {\ml{has}};
-\path[basic_edge] (n11)  --  (n13) 
-node[lab] at (1.982, -3.129) {\ml{has}};
-\path[basic_edge] (n11)  --  (n18) 
-node[lab] at (2.127, -3.273) {\ml{has}};
-\path[basic_edge] (n18)  -- (n21.south -| 3.155, -2.055)
-node[lab] at (4.719, -1.350) {\ml{id}};
-\path[basic_edge] (n3)  --  (n0) 
-node[lab] at (1.281, -1.594) {\ml{executes}};
-\path[basic_edge, no_arrow] (n16)  --  (n7) 
-node[lab] at (1.232, -3.093) {\ml{=}};
-\path[creator_edge] (n3)  -- node[lab] {\ml{{\color{creator_c}current}}} (n6) ;
-\path[eraser_edge] (n9)  -- node[lab] {\ml{{\color{eraser_c}has}}} (n22) ;
-\path[nesting_edge](n8.east |- 2.355, -0.205) -- node[lab] {\ml{@}} (n19) ;
-\path[eraser_edge] (n8)  --  (n10) 
-node[lab] at (1.570, -0.590) {\ml{{\color{eraser_c}writePrev}}};
-\path[nesting_edge](n10.north -| 2.355, -0.205) -- node[lab] {\ml{@}} (n19) ;
-\path[eraser_edge] (n1)  -- node[lab] {\ml{{\color{eraser_c}out}}} (n6) ;
-\path[eraser_edge](n1.west |- 0.205, -2.605) -- node[lab] {\ml{{\color{eraser_c}id}}} (n7) ;
-\path[nesting_edge] (n18)  -- node[lab] {\ml{@}} (n20) ;
-\path[basic_edge, no_arrow](n10.south -| 2.305, -1.405) -- node[lab] {\ml{=}} (n15) ;
-\path[eraser_edge] (n3)  -- node[lab] {\ml{{\color{eraser_c}current}}} (n2) ;
-\path[eraser_edge] (n9)  -- node[lab] {\ml{{\color{eraser_c}id}}}(n4.north -| 0.155, -1.205);
-\path[basic_edge, no_arrow](n21.west |- 2.305, -1.405) -- node[lab] {\ml{!=}} (n15) ;
-\path[eraser_edge] (n9)  -- node[lab] {\ml{{\color{eraser_c}op}}} (n5) ;
-\path[eraser_edge] (n9)  -- node[lab] {\ml{{\color{eraser_c}has}}} (n8) ;
 \path[nesting_edge] (n21)  -- node[lab] {\ml{@}} (n20) ;
-\path[basic_edge, no_arrow](n4.south -| 0.205, -2.605) --  (n7) 
-node[lab] at (0.245, -2.590) {\ml{=}};
+\path[basic_edge, no_arrow] (n16)  --  (n7) 
+node[lab] at (0.770, -3.120) {\ml{=}};
+\path[basic_edge, no_arrow](n21.west |- 2.305, -1.400) -- node[lab] {\ml{!=}} (n15) ;
+\path[eraser_edge](n1.west |- 0.205, -2.600) -- node[lab] {\ml{{\color{eraser_c}id}}} (n7) ;
+\path[basic_edge] (n11)  --  (n18) 
+node[lab] at (2.120, -3.108) {\ml{has}};
+\path[nesting_edge](n10.north -| 2.355, -0.200) -- node[lab] {\ml{@}} (n19) ;
+\path[basic_edge] (n3)  --  (n0) 
+node[lab] at (1.258, -1.626) {\ml{executes}};
 \path[basic_edge, no_arrow](n21.east |- 3.600, -1.400) -- (3.600, -1.400) -- (3.600, -3.900) -- (1.300, -3.900) -- (n16.south -| 1.300, -3.900)
-node[lab] at (3.600, -3.700) {\ml{!=}};
+node[lab] at (3.600, -3.703) {\ml{!=}};
+\path[eraser_edge] (n9)  -- node[lab] {\ml{{\color{eraser_c}op}}} (n5) ;
+\path[basic_edge](n14.west |- 1.305, -3.600) -- node[lab] {\ml{id}} (n16) ;
+\path[basic_edge](n13.east |- 3.150, -2.050) -- node[lab] {\ml{rf}} (n18) ;
+\path[eraser_edge] (n1)  -- node[lab] {\ml{{\color{eraser_c}in}}} (n2) ;
+\path[creator_edge] (n3)  -- node[lab] {\ml{{\color{creator_c}current}}} (n6) ;
+\path[basic_edge](n13.north -| 2.305, -1.400) -- node[lab] {\ml{id}} (n15) ;
+\path[eraser_edge] (n9)  -- node[lab] {\ml{{\color{eraser_c}has}}} (n22) ;
+\path[basic_edge] (n11)  --  (n13) 
+node[lab] at (1.977, -2.986) {\ml{has}};
+\path[basic_edge, no_arrow](n4.south -| 0.205, -2.600) --  (n7) 
+node[lab] at (0.170, -2.350) {\ml{=}};
+\path[creator_edge] (n18)  -- (n14.north -| 3.150, -2.050)
+node[lab] at (3.051, -2.694) {\ml{{\color{creator_c}rw}}};
+\path[eraser_edge] (n3)  -- node[lab] {\ml{{\color{eraser_c}current}}} (n2) ;
+\path[basic_edge] (n18)  -- (n21.south -| 3.150, -2.050)
+node[lab] at (3.110, -1.820) {\ml{id}};
+\path[eraser_edge] (n9)  -- node[lab] {\ml{{\color{eraser_c}id}}}(n4.north -| 0.150, -1.200);
+\path[eraser_edge](n5.east |- 1.800, -1.300) --  (n0) 
+node[lab] at (1.340, -1.280) {\ml{{\color{eraser_c}inv}}};
+\path[nesting_edge] (n18)  -- node[lab] {\ml{@}} (n20) ;
+\path[basic_edge] (n11)  -- (n14.west |- 1.850, -3.350)
+node[lab] at (2.414, -3.409) {\ml{has}};
+\path[creator_edge] (n13)  --  (n14) 
+node[lab] at (2.367, -2.402) {\ml{{\color{creator_c}ww}}};
+\path[eraser_edge] (n9)  -- node[lab] {\ml{{\color{eraser_c}has}}} (n8) ;
+\path[eraser_edge] (n1)  -- node[lab] {\ml{{\color{eraser_c}out}}} (n6) ;
+\path[basic_edge, no_arrow](n10.south -| 2.305, -1.400) -- node[lab] {\ml{=}} (n15) ;
+\path[nesting_edge](n8.east |- 2.355, -0.200) -- node[lab] {\ml{@}} (n19) ;
+\path[eraser_edge] (n8)  --  (n10) 
+node[lab] at (1.305, -0.498) {\ml{{\color{eraser_c}writePrev}}};
+\path[nesting_edge] (n22)  -- node[lab] {\ml{@}} (n23) ;
 \end{tikzpicture}
