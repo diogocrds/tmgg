@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="acyclic">
+    <graph role="rule" edgeids="false" edgemode="directed" id="cyclic">
         <attr name="$version">
             <string>curly</string>
         </attr>
@@ -16,7 +16,7 @@
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>67 80 8 18</string>
+                <string>55 80 31 18</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -27,11 +27,6 @@
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>type:P</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n3">
-            <attr name="label">
-                <string>not:</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
