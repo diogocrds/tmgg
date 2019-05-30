@@ -1,0 +1,16 @@
+% To use this figure in your LaTeX document
+% import the package groove/resources/groove2tikz.sty
+%
+\begin{tikzpicture}[scale=\tikzscale,name prefix=cyclic-]
+\node[embargo_node] (n0) at (0.770, -0.170) {\ml{{\color{embargo_c}\textbf{P}}}};
+\node[basic_node] (n3) at (0.480, -1.600) {\ml{\textbf{T}\\status = "vis"}};
+\node[embargo_node] (n1) at (0.255, -0.170) {\ml{{\color{embargo_c}\textbf{initH}}}};
+\node[basic_node] (n5) at (0.480, -0.720) {\ml{\textbf{T}\\status = "vis"}};
+
+\path[basic_edge](n3.east |- 1.240, -1.560) -- (1.240, -1.560) -- (n3.east |- 1.240, -1.560)
+node[lab] at (1.218, -1.580) {\ml{c\\v}};
+\path[basic_edge](n5.south -| 0.480, -1.600) --  (n3) 
+node[lab] at (0.550, -1.141) {\ml{?}};
+\path[basic_edge](n3.north -| 0.480, -0.720) --  (n5) 
+node[lab] at (0.410, -1.198) {\ml{rf}};
+\end{tikzpicture}

@@ -144,6 +144,11 @@
                 <string>type:GO</string>
             </attr>
         </edge>
+        <edge from="n0" to="n11">
+            <attr name="label">
+                <string>current</string>
+            </attr>
+        </edge>
         <edge from="n0" to="n5">
             <attr name="label">
                 <string>executes</string>
@@ -152,14 +157,17 @@
                 <string>244 0 50 226 50 285 11</string>
             </attr>
         </edge>
-        <edge from="n0" to="n11">
-            <attr name="label">
-                <string>current</string>
-            </attr>
-        </edge>
         <edge from="n1" to="n1">
             <attr name="label">
                 <string>type:read</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n4">
+            <attr name="label">
+                <string>target</string>
+            </attr>
+            <attr name="layout">
+                <string>226 -10 175 100 200 20 11</string>
             </attr>
         </edge>
         <edge from="n1" to="n11">
@@ -184,14 +192,6 @@
             </attr>
             <attr name="layout">
                 <string>314 -1 180 106 180 170 180 220 11</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n4">
-            <attr name="label">
-                <string>target</string>
-            </attr>
-            <attr name="layout">
-                <string>226 -10 175 100 200 20 11</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">
@@ -323,28 +323,12 @@
                 <string>type:T</string>
             </attr>
         </edge>
-        <edge from="n17" to="n37">
-            <attr name="label">
-                <string>id</string>
-            </attr>
-            <attr name="layout">
-                <string>463 2 135 505 40 510 11</string>
-            </attr>
-        </edge>
         <edge from="n17" to="n17">
             <attr name="label">
                 <string>c</string>
             </attr>
             <attr name="layout">
-                <string>456 24 144 510 190 510 144 510 11</string>
-            </attr>
-        </edge>
-        <edge from="n17" to="n17">
-            <attr name="label">
-                <string>p</string>
-            </attr>
-            <attr name="layout">
-                <string>456 24 144 510 190 510 144 510 11</string>
+                <string>456 24 135 505 190 510 135 505 11</string>
             </attr>
         </edge>
         <edge from="n17" to="n17">
@@ -352,7 +336,7 @@
                 <string>rf</string>
             </attr>
             <attr name="layout">
-                <string>456 24 144 510 190 510 144 510 11</string>
+                <string>456 24 135 505 190 510 135 505 11</string>
             </attr>
         </edge>
         <edge from="n17" to="n17">
@@ -360,7 +344,7 @@
                 <string>rt</string>
             </attr>
             <attr name="layout">
-                <string>456 24 144 510 190 510 144 510 11</string>
+                <string>456 24 135 505 190 510 135 505 11</string>
             </attr>
         </edge>
         <edge from="n17" to="n17">
@@ -368,7 +352,15 @@
                 <string>rw</string>
             </attr>
             <attr name="layout">
-                <string>456 24 144 510 190 510 144 510 11</string>
+                <string>456 24 135 505 190 510 135 505 11</string>
+            </attr>
+        </edge>
+        <edge from="n17" to="n17">
+            <attr name="label">
+                <string>v</string>
+            </attr>
+            <attr name="layout">
+                <string>456 24 135 505 190 510 135 505 11</string>
             </attr>
         </edge>
         <edge from="n17" to="n17">
@@ -376,12 +368,20 @@
                 <string>ww</string>
             </attr>
             <attr name="layout">
-                <string>456 24 144 510 190 510 144 510 11</string>
+                <string>456 24 135 505 190 510 135 505 11</string>
             </attr>
         </edge>
         <edge from="n17" to="n19">
             <attr name="label">
                 <string>status</string>
+            </attr>
+        </edge>
+        <edge from="n17" to="n37">
+            <attr name="label">
+                <string>id</string>
+            </attr>
+            <attr name="layout">
+                <string>463 2 135 505 40 510 11</string>
             </attr>
         </edge>
         <edge from="n19" to="n19">
@@ -392,22 +392,6 @@
         <edge from="n20" to="n20">
             <attr name="label">
                 <string>type:retW</string>
-            </attr>
-        </edge>
-        <edge from="n20" to="n4">
-            <attr name="label">
-                <string>arg</string>
-            </attr>
-            <attr name="layout">
-                <string>294 4 275 100 200 20 11</string>
-            </attr>
-        </edge>
-        <edge from="n20" to="n4">
-            <attr name="label">
-                <string>target</string>
-            </attr>
-            <attr name="layout">
-                <string>294 4 275 100 200 20 11</string>
             </attr>
         </edge>
         <edge from="n20" to="n11">
@@ -432,6 +416,22 @@
             </attr>
             <attr name="layout">
                 <string>284 -6 270 106 240 170 180 220 11</string>
+            </attr>
+        </edge>
+        <edge from="n20" to="n4">
+            <attr name="label">
+                <string>arg</string>
+            </attr>
+            <attr name="layout">
+                <string>294 4 275 100 200 20 11</string>
+            </attr>
+        </edge>
+        <edge from="n20" to="n4">
+            <attr name="label">
+                <string>target</string>
+            </attr>
+            <attr name="layout">
+                <string>294 4 275 100 200 20 11</string>
             </attr>
         </edge>
         <edge from="n28" to="n28">
@@ -560,12 +560,12 @@
                 <string>flag:free</string>
             </attr>
         </edge>
-        <edge from="n36" to="n38">
+        <edge from="n36" to="n37">
             <attr name="label">
-                <string>op</string>
+                <string>id</string>
             </attr>
             <attr name="layout">
-                <string>310 -1 40 435 35 375 11</string>
+                <string>461 3 40 435 40 510 11</string>
             </attr>
         </edge>
         <edge from="n36" to="n40">
@@ -574,14 +574,6 @@
             </attr>
             <attr name="layout">
                 <string>438 -1 40 435 105 375 11</string>
-            </attr>
-        </edge>
-        <edge from="n36" to="n37">
-            <attr name="label">
-                <string>id</string>
-            </attr>
-            <attr name="layout">
-                <string>461 3 40 435 40 510 11</string>
             </attr>
         </edge>
         <edge from="n36" to="n49">
@@ -598,6 +590,14 @@
             </attr>
             <attr name="layout">
                 <string>494 0 40 435 175 445 11</string>
+            </attr>
+        </edge>
+        <edge from="n36" to="n38">
+            <attr name="label">
+                <string>op</string>
+            </attr>
+            <attr name="layout">
+                <string>310 -1 40 435 35 375 11</string>
             </attr>
         </edge>
         <edge from="n37" to="n37">
@@ -636,12 +636,12 @@
                 <string>type:writeOP</string>
             </attr>
         </edge>
-        <edge from="n40" to="n50">
+        <edge from="n40" to="n39">
             <attr name="label">
-                <string>value</string>
+                <string>target</string>
             </attr>
             <attr name="layout">
-                <string>370 -1 105 375 270 330 11</string>
+                <string>640 7 105 375 230 300 11</string>
             </attr>
         </edge>
         <edge from="n40" to="n5">
@@ -652,41 +652,17 @@
                 <string>565 -3 105 375 50 285 11</string>
             </attr>
         </edge>
-        <edge from="n40" to="n39">
+        <edge from="n40" to="n50">
             <attr name="label">
-                <string>target</string>
+                <string>value</string>
             </attr>
             <attr name="layout">
-                <string>640 7 105 375 230 300 11</string>
+                <string>370 -1 105 375 270 330 11</string>
             </attr>
         </edge>
         <edge from="n43" to="n43">
             <attr name="label">
                 <string>type:Lvar</string>
-            </attr>
-        </edge>
-        <edge from="n43" to="n45">
-            <attr name="label">
-                <string>readBool</string>
-            </attr>
-            <attr name="layout">
-                <string>539 -3 175 445 305 520 11</string>
-            </attr>
-        </edge>
-        <edge from="n43" to="n45">
-            <attr name="label">
-                <string>writeBool</string>
-            </attr>
-            <attr name="layout">
-                <string>539 -3 175 445 305 520 11</string>
-            </attr>
-        </edge>
-        <edge from="n43" to="n39">
-            <attr name="label">
-                <string>name</string>
-            </attr>
-            <attr name="layout">
-                <string>174 -9 175 445 230 300 11</string>
             </attr>
         </edge>
         <edge from="n43" to="n50">
@@ -727,6 +703,30 @@
             </attr>
             <attr name="layout">
                 <string>697 11 175 445 310 450 270 330 11</string>
+            </attr>
+        </edge>
+        <edge from="n43" to="n45">
+            <attr name="label">
+                <string>readBool</string>
+            </attr>
+            <attr name="layout">
+                <string>539 -3 175 445 305 520 11</string>
+            </attr>
+        </edge>
+        <edge from="n43" to="n45">
+            <attr name="label">
+                <string>writeBool</string>
+            </attr>
+            <attr name="layout">
+                <string>539 -3 175 445 305 520 11</string>
+            </attr>
+        </edge>
+        <edge from="n43" to="n39">
+            <attr name="label">
+                <string>name</string>
+            </attr>
+            <attr name="layout">
+                <string>174 -9 175 445 230 300 11</string>
             </attr>
         </edge>
         <edge from="n45" to="n45">

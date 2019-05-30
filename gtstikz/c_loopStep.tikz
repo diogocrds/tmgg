@@ -1,0 +1,29 @@
+% To use this figure in your LaTeX document
+% import the package groove/resources/groove2tikz.sty
+%
+\begin{tikzpicture}[scale=\tikzscale,name prefix=loopStep-]
+\node[embargo_node] (n0) at (1.810, -0.300) {\ml{{\color{embargo_c}\textbf{P}}}};
+\node[basic_node] (n1) at (1.360, -0.750) {\ml{\textbf{T}}};
+\node[data_node] (n2) at (0.225, -0.720) {\ml{\textbf{int}}};
+\node[basic_node] (n4) at (0.810, -1.380) {\ml{\textbf{T}}};
+\node[data_node] (n3) at (0.205, -1.370) {\ml{\textbf{int}}};
+\node[nesting_node] (n5) at (0.785, -0.350) {\ml{$\forall^{>0}$}};
+
+\path[basic_edge, no_arrow](n2.south -| 0.205, -1.370) -- node[lab] {\ml{!=}} (n3) ;
+\path[nesting_edge] (n1)  -- node[lab] {\ml{@}} (n5) ;
+\path[basic_edge](n4.west |- 0.205, -1.370) --  (n3) 
+node[lab] at (0.570, -1.350) {\ml{id}};
+\path[creator_edge](n1.south -| 1.350, -1.200) -- (1.350, -1.200) -- (n1.south -| 1.350, -1.200)
+node[lab] at (1.364, -1.200) {\ml{{\color{creator_c}p}}};
+\path[basic_edge] (n1)  -- node[lab] {\ml{?}} (n4) ;
+\path[eraser_edge](n1.north -| 1.330, -0.200) -- (1.330, -0.200) -- (n1.north -| 1.330, -0.200)
+node[lab] at (1.330, -0.200) {\ml{{\color{eraser_c}c}}};
+\path[embargo_edge](n1.east |- 1.960, -0.750) -- (1.960, -0.750) -- (n1.east |- 1.960, -0.750)
+node[lab] at (1.960, -0.700) {\ml{{\color{embargo_c}p}}};
+\path[nesting_edge] (n2)  --  (n5) 
+node[lab] at (0.480, -0.510) {\ml{@}};
+\path[creator_edge](n4.east |- 1.220, -1.360) -- (1.220, -1.360) -- (n4.east |- 1.220, -1.360)
+node[lab] at (1.220, -1.400) {\ml{{\color{creator_c}c}}};
+\path[basic_edge](n1.west |- 0.225, -0.720) --  (n2) 
+node[lab] at (0.870, -0.700) {\ml{id}};
+\end{tikzpicture}

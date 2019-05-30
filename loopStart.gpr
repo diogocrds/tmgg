@@ -44,18 +44,18 @@
         </edge>
         <edge from="n1" to="n1">
             <attr name="label">
-                <string>not:p</string>
-            </attr>
-            <attr name="layout">
-                <string>500 0 246 334 329 408 246 334 11</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n1">
-            <attr name="label">
                 <string>new:c</string>
             </attr>
             <attr name="layout">
                 <string>500 0 246 334 345 238 246 334 11</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>not:v</string>
+            </attr>
+            <attr name="layout">
+                <string>500 0 246 334 329 408 246 334 11</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">

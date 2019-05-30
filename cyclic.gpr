@@ -6,17 +6,17 @@
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>130 79 8 18</string>
+                <string>73 8 8 18</string>
             </attr>
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>242 325 8 18</string>
+                <string>10 142 76 36</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>55 80 31 18</string>
+                <string>10 8 31 18</string>
             </attr>
         </node>
         <node id="n2">
@@ -26,7 +26,7 @@
         </node>
         <node id="n5">
             <attr name="layout">
-                <string>101 425 8 18</string>
+                <string>10 54 76 36</string>
             </attr>
         </node>
         <node id="n4">
@@ -54,15 +54,15 @@
                 <string>c</string>
             </attr>
             <attr name="layout">
-                <string>500 0 246 334 345 238 246 334 11</string>
+                <string>466 2 91 156 124 156 91 156 11</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
             <attr name="label">
-                <string>p</string>
+                <string>v</string>
             </attr>
             <attr name="layout">
-                <string>500 0 246 334 345 238 246 334 11</string>
+                <string>466 2 91 156 124 156 91 156 11</string>
             </attr>
         </edge>
         <edge from="n3" to="n2">
@@ -73,6 +73,9 @@
         <edge from="n3" to="n5">
             <attr name="label">
                 <string>rf</string>
+            </attr>
+            <attr name="layout">
+                <string>456 -7 48 160 48 72 11</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">
@@ -95,14 +98,17 @@
                 <string>type:T</string>
             </attr>
         </edge>
-        <edge from="n5" to="n4">
-            <attr name="label">
-                <string>status</string>
-            </attr>
-        </edge>
         <edge from="n5" to="n3">
             <attr name="label">
                 <string>?</string>
+            </attr>
+            <attr name="layout">
+                <string>478 -7 48 72 48 160 11</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n4">
+            <attr name="label">
+                <string>status</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">
