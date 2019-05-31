@@ -51,7 +51,12 @@
         </node>
         <node id="n9">
             <attr name="layout">
-                <string>25 71 11 18</string>
+                <string>18 68 25 24</string>
+            </attr>
+        </node>
+        <node id="n10">
+            <attr name="layout">
+                <string>93 51 45 18</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -84,17 +89,17 @@
                 <string>type:GO</string>
             </attr>
         </edge>
-        <edge from="n3" to="n4">
-            <attr name="label">
-                <string>executes</string>
-            </attr>
-        </edge>
         <edge from="n3" to="n1">
             <attr name="label">
                 <string>current</string>
             </attr>
             <attr name="layout">
                 <string>307 1 214 112 214 182 11</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n4">
+            <attr name="label">
+                <string>executes</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">
@@ -135,6 +140,11 @@
         <edge from="n5" to="n9">
             <attr name="label">
                 <string>at</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n10">
+            <attr name="label">
+                <string>?</string>
             </attr>
         </edge>
         <edge from="n6" to="n6">
@@ -180,6 +190,21 @@
         <edge from="n9" to="n9">
             <attr name="label">
                 <string>forallx:</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>del:</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>type:version</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n9">
+            <attr name="label">
+                <string>at</string>
             </attr>
         </edge>
     </graph>

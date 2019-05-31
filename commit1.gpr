@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
     <graph role="rule" edgeids="false" edgemode="directed" id="commit1">
+        <attr name="enabled">
+            <string>false</string>
+        </attr>
         <attr name="$version">
             <string>curly</string>
         </attr>
@@ -89,6 +92,11 @@
                 <string>int:</string>
             </attr>
         </edge>
+        <edge from="n3" to="n2">
+            <attr name="label">
+                <string>del:current</string>
+            </attr>
+        </edge>
         <edge from="n3" to="n3">
             <attr name="label">
                 <string>type:GO</string>
@@ -102,11 +110,6 @@
         <edge from="n3" to="n6">
             <attr name="label">
                 <string>new:current</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n2">
-            <attr name="label">
-                <string>del:current</string>
             </attr>
         </edge>
         <edge from="n0" to="n0">
@@ -139,24 +142,19 @@
                 <string>in</string>
             </attr>
         </edge>
-        <edge from="n1" to="n7">
-            <attr name="label">
-                <string>id</string>
-            </attr>
-        </edge>
         <edge from="n1" to="n6">
             <attr name="label">
                 <string>out</string>
             </attr>
         </edge>
-        <edge from="n9" to="n9">
+        <edge from="n1" to="n7">
             <attr name="label">
-                <string>del:</string>
+                <string>id</string>
             </attr>
         </edge>
         <edge from="n9" to="n9">
             <attr name="label">
-                <string>type:C</string>
+                <string>del:</string>
             </attr>
         </edge>
         <edge from="n9" to="n4">
@@ -167,6 +165,11 @@
         <edge from="n9" to="n5">
             <attr name="label">
                 <string>op</string>
+            </attr>
+        </edge>
+        <edge from="n9" to="n9">
+            <attr name="label">
+                <string>type:C</string>
             </attr>
         </edge>
         <edge from="n9" to="n8">
@@ -207,9 +210,9 @@
                 <string>del:</string>
             </attr>
         </edge>
-        <edge from="n8" to="n8">
+        <edge from="n8" to="n10">
             <attr name="label">
-                <string>type:Lvar</string>
+                <string>at</string>
             </attr>
         </edge>
         <edge from="n8" to="n12">
@@ -217,9 +220,9 @@
                 <string>not:writeBool</string>
             </attr>
         </edge>
-        <edge from="n8" to="n10">
+        <edge from="n8" to="n8">
             <attr name="label">
-                <string>at</string>
+                <string>type:Lvar</string>
             </attr>
         </edge>
         <edge from="n12" to="n12">
