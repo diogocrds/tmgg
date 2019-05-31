@@ -36,7 +36,7 @@
         </node>
         <node id="n9">
             <attr name="layout">
-                <string>207 321 36 18</string>
+                <string>187 291 36 18</string>
             </attr>
         </node>
         <node id="n6">
@@ -76,7 +76,7 @@
         </node>
         <node id="n14">
             <attr name="layout">
-                <string>52 26 26 18</string>
+                <string>12 8 106 54</string>
             </attr>
         </node>
         <node id="n15">
@@ -106,12 +106,12 @@
         </node>
         <node id="n20">
             <attr name="layout">
-                <string>121 381 8 18</string>
+                <string>161 341 8 18</string>
             </attr>
         </node>
         <node id="n21">
             <attr name="layout">
-                <string>61 451 8 18</string>
+                <string>101 401 8 18</string>
             </attr>
         </node>
         <node id="n22">
@@ -121,22 +121,22 @@
         </node>
         <node id="n23">
             <attr name="layout">
-                <string>171 451 8 18</string>
+                <string>211 401 8 18</string>
             </attr>
         </node>
         <node id="n24">
             <attr name="layout">
-                <string>232 441 17 18</string>
+                <string>292 401 17 18</string>
             </attr>
         </node>
         <node id="n25">
             <attr name="layout">
-                <string>203 368 25 24</string>
+                <string>243 328 25 24</string>
             </attr>
         </node>
         <node id="n26">
             <attr name="layout">
-                <string>353 116 45 18</string>
+                <string>333 106 45 18</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -212,6 +212,9 @@
         <edge from="n4" to="n9">
             <attr name="label">
                 <string>target</string>
+            </attr>
+            <attr name="layout">
+                <string>517 6 136 319 176 304 11</string>
             </attr>
         </edge>
         <edge from="n4" to="n10">
@@ -296,6 +299,9 @@
             <attr name="label">
                 <string>=</string>
             </attr>
+            <attr name="layout">
+                <string>512 6 74 374 270 290 251 65 13</string>
+            </attr>
         </edge>
         <edge from="n11" to="n11">
             <attr name="label">
@@ -345,7 +351,7 @@
                 <string>new:readFrom</string>
             </attr>
             <attr name="layout">
-                <string>500 0 65 35 300 20 300 50 11</string>
+                <string>500 0 126 20 260 20 288 41 13</string>
             </attr>
         </edge>
         <edge from="n14" to="n19">
@@ -453,7 +459,7 @@
                 <string>=</string>
             </attr>
             <attr name="layout">
-                <string>500 0 240 450 300 450 300 50 11</string>
+                <string>500 0 244 435 290 61 13</string>
             </attr>
         </edge>
         <edge from="n24" to="n25">
@@ -475,10 +481,16 @@
             <attr name="label">
                 <string>by</string>
             </attr>
+            <attr name="layout">
+                <string>275 8 343 105 310 62 11</string>
+            </attr>
         </edge>
         <edge from="n26" to="n13">
             <attr name="label">
                 <string>value</string>
+            </attr>
+            <attr name="layout">
+                <string>230 0 332 105 263 59 11</string>
             </attr>
         </edge>
     </graph>

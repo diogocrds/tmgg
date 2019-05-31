@@ -6,52 +6,52 @@
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>283 158 33 18</string>
+                <string>219 121 33 18</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>206 173 17 18</string>
+                <string>142 91 17 18</string>
             </attr>
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>205 103 19 18</string>
+                <string>241 86 19 18</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>241 6 8 18</string>
+                <string>261 21 8 18</string>
             </attr>
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>150 11 20 18</string>
+                <string>180 11 20 18</string>
             </attr>
         </node>
         <node id="n5">
             <attr name="layout">
-                <string>31 11 19 18</string>
+                <string>61 11 19 18</string>
             </attr>
         </node>
         <node id="n6">
             <attr name="layout">
-                <string>95 84 11 18</string>
+                <string>60 126 11 18</string>
             </attr>
         </node>
         <node id="n7">
             <attr name="layout">
-                <string>113 151 8 18</string>
+                <string>91 91 8 18</string>
             </attr>
         </node>
         <node id="n8">
             <attr name="layout">
-                <string>10 152 26 18</string>
+                <string>12 91 26 18</string>
             </attr>
         </node>
         <node id="n9">
             <attr name="layout">
-                <string>18 68 25 24</string>
+                <string>13 48 25 24</string>
             </attr>
         </node>
         <node id="n10">
@@ -94,7 +94,7 @@
                 <string>current</string>
             </attr>
             <attr name="layout">
-                <string>307 1 214 112 214 182 11</string>
+                <string>478 3 235 100 166 100 11</string>
             </attr>
         </edge>
         <edge from="n3" to="n4">

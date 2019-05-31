@@ -6,7 +6,7 @@
         </attr>
         <node id="n2">
             <attr name="layout">
-                <string>192 141 17 18</string>
+                <string>192 121 17 18</string>
             </attr>
         </node>
         <node id="n3">
@@ -21,22 +21,22 @@
         </node>
         <node id="n7">
             <attr name="layout">
-                <string>12 201 17 18</string>
+                <string>32 131 17 18</string>
             </attr>
         </node>
         <node id="n6">
             <attr name="layout">
-                <string>272 141 17 18</string>
+                <string>272 121 17 18</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>170 201 31 18</string>
+                <string>100 126 31 18</string>
             </attr>
         </node>
         <node id="n8">
             <attr name="layout">
-                <string>62 161 36 18</string>
+                <string>52 61 36 18</string>
             </attr>
         </node>
         <node id="n9">
@@ -51,12 +51,12 @@
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>12 91 17 18</string>
+                <string>12 81 17 18</string>
             </attr>
         </node>
         <node id="n10">
             <attr name="layout">
-                <string>142 141 17 18</string>
+                <string>152 61 17 18</string>
             </attr>
         </node>
         <edge from="n2" to="n2">
@@ -69,9 +69,9 @@
                 <string>type:GO</string>
             </attr>
         </edge>
-        <edge from="n3" to="n6">
+        <edge from="n3" to="n2">
             <attr name="label">
-                <string>new:current</string>
+                <string>del:current</string>
             </attr>
         </edge>
         <edge from="n3" to="n0">
@@ -79,9 +79,9 @@
                 <string>executes</string>
             </attr>
         </edge>
-        <edge from="n3" to="n2">
+        <edge from="n3" to="n6">
             <attr name="label">
-                <string>del:current</string>
+                <string>new:current</string>
             </attr>
         </edge>
         <edge from="n0" to="n0">
@@ -109,6 +109,11 @@
                 <string>type:write</string>
             </attr>
         </edge>
+        <edge from="n1" to="n7">
+            <attr name="label">
+                <string>id</string>
+            </attr>
+        </edge>
         <edge from="n1" to="n8">
             <attr name="label">
                 <string>target</string>
@@ -119,11 +124,6 @@
                 <string>arg</string>
             </attr>
         </edge>
-        <edge from="n1" to="n7">
-            <attr name="label">
-                <string>id</string>
-            </attr>
-        </edge>
         <edge from="n1" to="n2">
             <attr name="label">
                 <string>in</string>
@@ -132,6 +132,9 @@
         <edge from="n1" to="n6">
             <attr name="label">
                 <string>out</string>
+            </attr>
+            <attr name="layout">
+                <string>500 0 136 144 190 170 266 136 13</string>
             </attr>
         </edge>
         <edge from="n8" to="n8">
@@ -169,25 +172,25 @@
                 <string>type:writeOP</string>
             </attr>
         </edge>
-        <edge from="n5" to="n10">
-            <attr name="label">
-                <string>value</string>
-            </attr>
-            <attr name="layout">
-                <string>402 0 140 38 140 135 11</string>
-            </attr>
-        </edge>
         <edge from="n5" to="n8">
             <attr name="label">
                 <string>target</string>
             </attr>
             <attr name="layout">
-                <string>564 -1 129 38 89 155 11</string>
+                <string>418 2 121 28 97 60 11</string>
             </attr>
         </edge>
         <edge from="n5" to="n0">
             <attr name="label">
                 <string>inv</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n10">
+            <attr name="label">
+                <string>value</string>
+            </attr>
+            <attr name="layout">
+                <string>407 0 160 28 160 55 11</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">

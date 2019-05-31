@@ -6,7 +6,7 @@
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>146 149 31 18</string>
+                <string>289 107 43 36</string>
             </attr>
         </node>
         <node id="n1">
@@ -16,22 +16,22 @@
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>151 71 19 18</string>
+                <string>93 7 65 36</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>241 6 8 18</string>
+                <string>371 26 8 18</string>
             </attr>
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>150 11 20 18</string>
+                <string>110 76 20 18</string>
             </attr>
         </node>
         <node id="n5">
             <attr name="layout">
-                <string>256 96 8 18</string>
+                <string>212 8 76 54</string>
             </attr>
         </node>
         <node id="n6">
@@ -46,22 +46,22 @@
         </node>
         <node id="n8">
             <attr name="layout">
-                <string>17 131 36 18</string>
+                <string>217 121 36 18</string>
             </attr>
         </node>
         <node id="n9">
             <attr name="layout">
-                <string>120 81 11 18</string>
+                <string>180 81 11 18</string>
             </attr>
         </node>
         <node id="n10">
             <attr name="layout">
-                <string>31 26 19 18</string>
+                <string>81 131 19 18</string>
             </attr>
         </node>
         <node id="n11">
             <attr name="layout">
-                <string>63 181 45 18</string>
+                <string>8 8 54 54</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -127,7 +127,7 @@
                 <string>has</string>
             </attr>
             <attr name="layout">
-                <string>422 1 245 15 260 105 11</string>
+                <string>446 0 375 35 250 35 11</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">
@@ -143,6 +143,9 @@
         <edge from="n4" to="n10">
             <attr name="label">
                 <string>has</string>
+            </attr>
+            <attr name="layout">
+                <string>509 0 110 108 101 123 11</string>
             </attr>
         </edge>
         <edge from="n5" to="n5">
@@ -170,7 +173,7 @@
                 <string>writes</string>
             </attr>
             <attr name="layout">
-                <string>133 5 253 107 55 138 11</string>
+                <string>410 -1 250 35 205 120 11</string>
             </attr>
         </edge>
         <edge from="n6" to="n6">
@@ -226,6 +229,9 @@
         <edge from="n10" to="n11">
             <attr name="label">
                 <string>latest</string>
+            </attr>
+            <attr name="layout">
+                <string>521 -6 82 123 55 68 11</string>
             </attr>
         </edge>
         <edge from="n11" to="n11">

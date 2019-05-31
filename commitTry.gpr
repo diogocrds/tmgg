@@ -6,52 +6,52 @@
         </attr>
         <node id="n2">
             <attr name="layout">
-                <string>232 291 17 18</string>
+                <string>232 271 17 18</string>
             </attr>
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>271 236 19 18</string>
+                <string>271 221 19 18</string>
             </attr>
         </node>
         <node id="n0">
             <attr name="layout">
-                <string>200 166 20 18</string>
+                <string>200 151 20 18</string>
             </attr>
         </node>
         <node id="n7">
             <attr name="layout">
-                <string>22 361 17 18</string>
+                <string>22 321 17 18</string>
             </attr>
         </node>
         <node id="n6">
             <attr name="layout">
-                <string>312 291 17 18</string>
+                <string>312 271 17 18</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>273 356 25 18</string>
+                <string>273 316 25 18</string>
             </attr>
         </node>
         <node id="n9">
             <attr name="layout">
-                <string>10 157 30 36</string>
+                <string>10 137 30 36</string>
             </attr>
         </node>
         <node id="n5">
             <attr name="layout">
-                <string>113 166 25 18</string>
+                <string>113 151 25 18</string>
             </attr>
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>22 271 17 18</string>
+                <string>22 251 17 18</string>
             </attr>
         </node>
         <node id="n8">
             <attr name="layout">
-                <string>44 17 26 18</string>
+                <string>10 8 94 36</string>
             </attr>
         </node>
         <node id="n10">
@@ -81,17 +81,17 @@
         </node>
         <node id="n18">
             <attr name="layout">
-                <string>141 206 8 18</string>
+                <string>141 191 8 18</string>
             </attr>
         </node>
         <node id="n20">
             <attr name="layout">
-                <string>141 276 8 18</string>
+                <string>101 238 89 54</string>
             </attr>
         </node>
         <node id="n21">
             <attr name="layout">
-                <string>62 331 17 18</string>
+                <string>52 291 17 18</string>
             </attr>
         </node>
         <node id="n19">
@@ -106,7 +106,7 @@
         </node>
         <node id="n23">
             <attr name="layout">
-                <string>343 221 45 18</string>
+                <string>343 201 45 18</string>
             </attr>
         </node>
         <node id="n14">
@@ -149,7 +149,7 @@
                 <string>executes</string>
             </attr>
             <attr name="layout">
-                <string>306 0 270 235 221 186 11</string>
+                <string>306 0 280 230 210 160 11</string>
             </attr>
         </edge>
         <edge from="n0" to="n0">
@@ -237,7 +237,7 @@
                 <string>inv</string>
             </attr>
             <attr name="layout">
-                <string>468 0 125 175 210 175 11</string>
+                <string>468 0 125 160 210 160 11</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">
@@ -313,7 +313,7 @@
                 <string>new:log</string>
             </attr>
             <attr name="layout">
-                <string>500 0 290 145 304 209 365 230 13</string>
+                <string>500 0 290 125 304 189 365 210 13</string>
             </attr>
         </edge>
         <edge from="n11" to="n11">

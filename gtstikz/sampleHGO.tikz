@@ -1,0 +1,30 @@
+% To use this figure in your LaTeX document
+% import the package groove/resources/groove2tikz.sty
+%
+\begin{tikzpicture}[scale=\tikzscale,name prefix=sampleHGO-]
+\node[basic_node] (n1) at (2.455, -0.905) {\ml{\textbf{write}}};
+\node[data_node] (n2) at (1.855, -0.805) {\ml{1}};
+\node[data_node] (n3) at (2.705, -1.405) {\ml{"x"}};
+\node[data_node] (n4) at (1.255, -0.205) {\ml{1}};
+\node[basic_node] (n0) at (1.505, -0.905) {\ml{\textbf{init}}};
+\node[data_node] (n12) at (0.955, -0.805) {\ml{1}};
+\node[data_node] (n13) at (1.955, -1.305) {\ml{1}};
+\node[basic_node] (n54) at (0.205, -0.205) {\ml{\textbf{GO}}};
+\node[data_node] (n58) at (1.855, -0.205) {\ml{2}};
+\node[data_node] (n61) at (2.855, -0.205) {\ml{3}};
+
+\path[basic_edge] (n1)  -- node[lab] {\ml{out}} (n61) ;
+\path[basic_edge] (n1)  -- node[lab] {\ml{in}} (n58) ;
+\path[basic_edge] (n0)  -- node[lab] {\ml{out}} (n58) ;
+\path[basic_edge] (n1)  --  (n3) 
+node[lab] at (2.543, -1.059) {\ml{target}};
+\path[basic_edge](n54.east |- 1.255, -0.205) --  (n4) 
+node[lab] at (0.644, -0.210) {\ml{current}};
+\path[basic_edge] (n1)  --  (n13) 
+node[lab] at (2.266, -1.044) {\ml{arg}};
+\path[basic_edge] (n1)  --  (n2) 
+node[lab] at (2.287, -0.897) {\ml{id}};
+\path[basic_edge] (n0)  -- node[lab] {\ml{in}} (n4) ;
+\path[basic_edge] (n0)  --  (n12) 
+node[lab] at (1.350, -0.897) {\ml{id}};
+\end{tikzpicture}
