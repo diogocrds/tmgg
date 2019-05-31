@@ -17,14 +17,14 @@
 \path[basic_edge] (n1)  -- node[lab] {\ml{in}} (n58) ;
 \path[basic_edge] (n0)  -- node[lab] {\ml{out}} (n58) ;
 \path[basic_edge] (n1)  --  (n3) 
-node[lab] at (2.543, -1.059) {\ml{target}};
+node[lab] at (2.590, -1.170) {\ml{target}};
 \path[basic_edge](n54.east |- 1.255, -0.205) --  (n4) 
 node[lab] at (0.644, -0.210) {\ml{current}};
 \path[basic_edge] (n1)  --  (n13) 
-node[lab] at (2.266, -1.044) {\ml{arg}};
+node[lab] at (2.150, -1.160) {\ml{arg}};
 \path[basic_edge] (n1)  --  (n2) 
-node[lab] at (2.287, -0.897) {\ml{id}};
+node[lab] at (2.130, -0.850) {\ml{id}};
 \path[basic_edge] (n0)  -- node[lab] {\ml{in}} (n4) ;
 \path[basic_edge] (n0)  --  (n12) 
-node[lab] at (1.350, -0.897) {\ml{id}};
+node[lab] at (1.220, -0.820) {\ml{id}};
 \end{tikzpicture}

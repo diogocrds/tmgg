@@ -1,0 +1,14 @@
+% To use this figure in your LaTeX document
+% import the package groove/resources/groove2tikz.sty
+%
+\begin{tikzpicture}[scale=\tikzscale,name prefix=s25-]
+\node[basic_node] (n81) at (0.480, -0.350) {\ml{\textbf{T}\\id = 0\\status = "vis"}};
+\node[basic_node] (n88) at (0.480, -1.480) {\ml{\textbf{T}\\id = 2\\status = "vis"\\writes = "x"}};
+\node[basic_node] (n100) at (1.670, -0.350) {\ml{\textbf{T}\\id = 1\\status = "loc"}};
+\node[basic_node] (n105) at (1.680, -1.450) {\ml{\textbf{T}\\id = 3\\status = "vis"\\writes = "y"}};
+
+\path[basic_edge] (n88)  -- node[lab] {\ml{rf\\rt}} (n100) ;
+\path[basic_edge](n88.east |- 1.680, -1.450) -- node[lab] {\ml{rf\\rt\\ww}} (n105) ;
+\path[basic_edge](n81.south -| 0.480, -1.480) -- node[lab] {\ml{ww}} (n88) ;
+\path[basic_edge](n100.south -| 1.680, -1.450) -- node[lab] {\ml{rw}} (n105) ;
+\end{tikzpicture}
